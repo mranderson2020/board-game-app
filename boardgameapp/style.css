@@ -1,0 +1,28 @@
+html {
+    background-color: #eff0f2;
+}
+
+h1 {
+    color: royalblue;
+}
+
+.container {
+    background-color: #dae0ea;
+    width: 98%;
+    height: auto;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 7px;
+    padding: 0.5em;
+    margin: 0.5em auto;
+
+}
+
+.title {
+    margin: 0px;
+    color: dodgerblue;
+}
+
+.gameImg {
+    height: 60px;
+    margin: 5px 0px;
+}
