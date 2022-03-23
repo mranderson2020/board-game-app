@@ -1,0 +1,24 @@
+<div id="gameInfo" *ngFor="let  game of games">
+  <h3 id="title">  {{game.name}} </h3>
+
+  <div class="date" *ngIf="game.year_published != null; else elseBlock">
+    {{game.year_published}}
+  </div>
+  <ng-template class="date" #elseBlock>
+    Year unknown<br>
+  </ng-template>
+
+  <div class="players" *ngIf="game.min_players != null; else elseBlockPlayers">
+    {{game.min_players}} - {{game.max_players}} players
+  </div>
+  <ng-template class="players" #elseBlockPlayers>
+    <br>
+  </ng-template>
+
+  <img id="gameImg" src={{game.image_url}} />
+
+  <div id="description" [innerHTML]="game.description">
+  </div>
+
+  <a id="link" href="{{game.url}}">Board Game Atlas Page</a>
+</div>
